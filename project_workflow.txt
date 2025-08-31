@@ -39,9 +39,35 @@ need to deactivate conda
  python --version --> 3.10.18 
 
 # to install package:
- uv pip install -r .\requirements.txt
+ uv pip install -r .\requirements.txt [virtual env needed to be created beforehand] (option 1)
 
 # need to fetch data from database/flipkart and dump the data into vector DB 
 steamlit run scrapper_ui.py 
+
+# to install package:
+uv add fastapi
+uv lock --> capture all packages used in the project 
+.venv folder is created 
+
+important links shared by sunny:
+https://docs.google.com/document/d/1S51yj-kZ2G1otA2u5ilsPFkEXxJGJaOKadZJkSL3IKc/preview?tab=t.0
+
+uv add -r requirements.txt (.venv (virtual env) and .lock will be create automatically) (option 2)
+
+#8. Project workflow problem statement understanding:
+
+ETL Pipeline:
+1. Scrap data from Product review sections/images (E)
+2. Transformation (T)
+3. Load data into vector DB  (L)
+
+Chatbot:
+1. LLM --> Classical RAG
+       --> Agentic RAG
+       --> Agents 
+
+Flow:
+Web --> ETL --> chatbot
+
 
 
