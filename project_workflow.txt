@@ -1,0 +1,43 @@
+#1. install uv
+pip install uv
+
+#2. To see the location of uv installed
+import shutil
+print(shutil.which("uv")) --> # location of uv
+
+#3. Create folder structure for the project:
+uv init ecomm-prod-assistant
+cd ecomm-prod-assistant
+code .
+
+#4. To check all python packages available in base python:
+uv pip list
+
+#5. To check what all python is present to download:
+uv python list
+
+#6. install
+uv python install cpython-3.10.18-windows-x86_64-none
+
+
+cpython-3.11.5-windows-x86_64-none C:\Users\souvik\AppData\Local\Programs\Python\Python311\python.exe
+cpython-3.11.4-windows-x86_64-none C:\Users\souvik\Anaconda3\python.exe
+cpython-3.10.18-windows-x86_64-none C:\Users\souvik\AppData\Roaming\uv\python\cpython-3.10.18-windows-x86_64-none\python.exe
+
+#7. Create virtual env:
+uv venv ecomm_assistant --python cpython-3.10.18-windows-x86_64-none
+
+to activate:
+under scripts folder:
+.\ecomm_assistant\Scripts\Activate.ps1
+
+if showing like below:
+(base) (ecomm_assistant) PS D:\LLMOPS\ecomm-prod-assistant>
+
+need to deactivate conda 
+(ecomm_assistant) PS D:\LLMOPS\ecomm-prod-assistant> 
+ python --version --> 3.10.18 
+
+# to install package:
+ uv pip install -r .\requirements.txt
+
