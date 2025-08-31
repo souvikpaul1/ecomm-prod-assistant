@@ -41,3 +41,7 @@ need to deactivate conda
 # to install package:
  uv pip install -r .\requirements.txt
 
+# need to fetch data from database/flipkart and dump the data into vector DB 
+steamlit run scrapper_ui.py 
+
+
