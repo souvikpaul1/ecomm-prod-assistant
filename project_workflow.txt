@@ -35,7 +35,7 @@ if showing like below:
 (base) (ecomm_assistant) PS D:\LLMOPS\ecomm-prod-assistant>
 
 need to deactivate conda 
-(ecomm_assistant) PS D:\LLMOPS\ecomm-prod-assistant> 
+(ecomm_assistant) PS D:\LLMOPS\ecomm-prod-assistant>  --> conda deactivate
  python --version --> 3.10.18 
 
 # to install package:
@@ -68,6 +68,9 @@ Chatbot:
 
 Flow:
 Web --> ETL --> chatbot
+
+31st August:
+#9. 
 
 
 
